@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 20;display:inline-block;vertical-align:middle;line-height:1;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-high":"#dce9ff","on-secondary-fixed":"#002113","surface-variant":"#d3e4fe","on-primary":"#ffffff","on-tertiary-fixed-variant":"#003ea8","on-primary-container":"#85be9e","secondary":"#246a4b","on-secondary":"#ffffff","secondary-container":"#a8efc7","on-primary-fixed-variant":"#165037","surface-dim":"#cbdbf5","on-tertiary":"#ffffff","primary-fixed-dim":"#99d3b2","tertiary-fixed-dim":"#b4c5ff","on-surface":"#0b1c30","surface-container":"#e5eeff","inverse-surface":"#213145","surface-bright":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-primary-fixed":"#002113","on-surface-variant":"#404943","tertiary-fixed":"#dbe1ff","tertiary":"#002873","on-background":"#0b1c30","on-error-container":"#93000a","primary-fixed":"#b4f0cd","outline-variant":"#c0c9c1","secondary-fixed":"#abf2ca","primary":"#003622","on-secondary-fixed-variant":"#005234","surface-container-highest":"#d3e4fe","surface-tint":"#31694e","error-container":"#ffdad6","on-tertiary-container":"#96afff","primary-container":"#134e35","on-secondary-container":"#296f4f","surface-container-low":"#eff4ff","on-tertiary-fixed":"#00174b","outline":"#707972","tertiary-container":"#003ca3","secondary-fixed-dim":"#8fd5ae","background":"#f8f9ff","error":"#ba1a1a","inverse-primary":"#99d3b2","surface-container-lowest":"#ffffff","surface":"#f8f9ff","on-error":"#ffffff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-base":"1rem","space-xxs":"0.125rem","space-md":"0.75rem","margin-tablet":"1.5rem","space-2xl":"3rem","gutter-desktop":"1.5rem","space-xs":"0.25rem","space-xl":"2rem","margin-desktop":"2rem","margin":"1rem"},"fontFamily":{"headline-xl":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"numeric-tabular-md":["Inter"],"label-lg":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-md":["Inter"],"numeric-currency-lg":["Inter"]},"fontSize":{"headline-xl":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.04em","fontWeight":"600"}],"headline-sm":["1rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"0","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"numeric-tabular-md":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"600"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1rem","fontWeight":"400"}],"headline-xl-mobile":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"700"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"600"}],"numeric-currency-lg":["1.5rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-72 bg-surface-container-lowest flex flex-col z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-base flex items-center gap-space-sm bg-surface-container-low shrink-0"><img alt="AgriMandi AI Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGxt50GTPgjTYafor60uvbCnH92OtkuFMXK2e-CFw1LlYf421h-dQVB0YFxcIHaswKfxtgyouMjiA8-0OrYgYAikdUecqWMXd8mZZHF7Eol0vtkqM5nmUSUkn-1Rr5GwjgpoPZR7qnP-djeS8UFqUS7HLxfSdYsdRgu6qM9tYMYpo6vk8wBJ5PnzIwtU_La2RTtfNp1SnqeglkE0Jy_RQqjFlUrO7pj-dDcb9ZYw0wOGIgnBWcKQB1"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">AgriMandi AI</span><span class="px-space-xs py-space-xxs bg-primary-container text-on-primary font-label-sm text-label-sm rounded uppercase">APMC</span></div><span class="font-body-sm text-body-sm text-on-surface-variant truncate">Operational Suite v4.2</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><div class="px-space-xs py-space-xxs mb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Trading Floor &amp; Operations</div><nav class="flex flex-col gap-space-xxs mb-space-md" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-space-lg shrink-0">dashboard</span><span class="truncate">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="auction-desk" href="#"><div class="flex items-center gap-space-sm truncate"><span class="material-symbols-outlined text-space-lg shrink-0">gavel</span><span class="truncate">Auction Desk</span></div><span class="inline-flex items-center gap-space-xxs px-space-xs py-space-xxs bg-error text-on-error font-label-sm text-label-sm rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest animate-pulse"></span>LIVE</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="lots-management" href="#"><span class="material-symbols-outlined text-space-lg shrink-0">inventory_2</span><span class="truncate">Lots Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="transactions-billing" href="#"><span class="material-symbols-outlined text-space-lg shrink-0">receipt_long</span><span class="truncate">Transactions &amp; Billing</span></a></nav><div class="px-space-xs py-space-xxs mb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Settlement &amp; Inventory</div><nav class="flex flex-col gap-space-xxs mb-space-md" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="payment-ledger" href="#"><span class="material-symbols-outlined text-space-lg shrink-0">payments</span><span class="truncate">Payment Ledger</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="returnable-asset-ledger" href="#"><span class="material-symbols-outlined text-space-lg shrink-0">local_shipping</span><span class="truncate">Returnable Asset Ledger</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="farmers-directory" href="#"><span class="material-symbols-outlined text-space-lg shrink-0">group</span><span class="truncate">Farmers Directory</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="buyers-directory" href="#"><span class="material-symbols-outlined text-space-lg shrink-0">storefront</span><span class="truncate">Buyers Directory</span></a></nav><div class="px-space-xs py-space-xxs mb-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Intelligence &amp; Compliance</div><nav class="flex flex-col gap-space-xxs" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports-audit" href="#"><span class="material-symbols-outlined text-space-lg shrink-0">analytics</span><span class="truncate">Reports &amp; Audit</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ai-insights" href="#"><div class="flex items-center gap-space-sm truncate"><span class="material-symbols-outlined text-space-lg shrink-0 text-secondary">auto_awesome</span><span class="truncate">AI Insights</span></div><span class="px-space-xs py-space-xxs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded uppercase">Advisory</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="role-portals" href="#"><span class="material-symbols-outlined text-space-lg shrink-0">verified_user</span><span class="truncate">Role Portals</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings-compliance" href="#"><span class="material-symbols-outlined text-space-lg shrink-0">tune</span><span class="truncate">Settings &amp; Compliance</span></a></nav></div><div class="p-space-sm bg-surface-container-low shrink-0"><div class="p-space-sm bg-surface-container-lowest rounded-xl flex flex-col gap-space-xs"><div class="flex items-start gap-space-sm"><img alt="Profile" class="w-10 h-10 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUxRRQ0OQnblhQfSmfSlMVwUd-WqvjMmqfReW_cHbICBWn-R-YTqu-hUwzT8B77DLfsIwI5IHHiCXpqTivG3bMd1r3jgO1Duk0KfjCrnvsbrNMiDnHQgDg6Qjzb00PUfTc3xqtQC7yyBrINsSh2f_mBUoj0kSo0bWJyZv2Q_FsQz1VX2-MAzsVAzqUH4eljrsUjaXKsOpraWs2p4yGG5c-ADL8Qxjca6IkoM4m-PknYoeuqv9R2ku6"/><div class="min-w-0 flex-1"><div class="font-label-lg text-label-lg text-on-surface truncate font-semibold">Rajesh V. Patel</div><div class="font-body-sm text-body-sm text-secondary truncate font-medium">#APMC-PUN-084</div><div class="font-label-sm text-label-sm text-on-surface-variant truncate">APMC Pune Yard No. 4</div></div></div><div class="flex items-center justify-between pt-space-xs bg-surface-container-lowest"><span class="inline-flex items-center gap-space-xxs text-secondary font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-secondary"></span>Active Session</span><a class="inline-flex items-center gap-space-xxs font-label-sm text-label-sm text-error hover:bg-error-container hover:text-on-error-container px-space-xs py-space-xxs rounded transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-space-base">logout</span>Exit</a></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 px-space-lg flex items-center justify-between gap-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-lg"><span class="material-symbols-outlined text-space-lg text-primary shrink-0">location_on</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium leading-none">Market Location</span><div class="flex items-center gap-space-xs mt-space-xxs"><span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">APMC Market Yard, Pune - Shed 14B</span><span class="px-space-xs py-space-xxs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded uppercase">WB #2</span></div></div><span class="material-symbols-outlined text-space-base text-on-surface-variant ml-space-xs">expand_more</span></div></div><div class="flex-1 max-w-xl mx-space-md hidden xl:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-space-lg text-on-surface-variant">search</span><input class="w-full pl-10 pr-16 py-space-xs bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container" placeholder="Search Farmer, Buyer, Lot ID (e.g. LOT-842), or TXN..." type="text"/><kbd class="absolute right-space-sm px-space-xs py-space-xxs bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded shadow-sm">⌘K</kbd></div></div><div class="flex items-center gap-space-sm shrink-0"><div class="hidden 2xl:flex items-center gap-space-xs px-space-sm py-space-xs bg-secondary-container text-on-secondary-container rounded-lg"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Physical Auction Active</span><span class="text-on-secondary-container/40">|</span><span class="font-body-sm text-body-sm font-medium">Gate Inward: 142 MT</span></div><a class="inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold rounded-lg hover:bg-primary transition-colors shadow-sm shrink-0" data-path="create-lot" href="#"><span class="material-symbols-outlined text-space-base">add_circle</span><span>+ Create Lot</span></a><div class="relative"><button class="w-9 h-9 rounded-lg flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-space-lg">notifications</span></button><span class="absolute -top-1 -right-1 px-1.5 py-0.2 bg-error text-on-error font-label-sm text-label-sm font-bold rounded-full">3</span></div><div class="hidden md:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-lg"><span class="material-symbols-outlined text-space-base text-on-surface-variant">badge</span><span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Agent: Rajesh Patel</span><span class="material-symbols-outlined text-space-base text-on-surface-variant">arrow_drop_down</span></div><a class="w-9 h-9 rounded-lg flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="help-desk" href="#" title="APMC Support Desk"><span class="material-symbols-outlined text-space-lg">help_center</span></a><div class="flex items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUxRRQ0OQnblhQfSmfSlMVwUd-WqvjMmqfReW_cHbICBWn-R-YTqu-hUwzT8B77DLfsIwI5IHHiCXpqTivG3bMd1r3jgO1Duk0KfjCrnvsbrNMiDnHQgDg6Qjzb00PUfTc3xqtQC7yyBrINsSh2f_mBUoj0kSo0bWJyZv2Q_FsQz1VX2-MAzsVAzqUH4eljrsUjaXKsOpraWs2p4yGG5c-ADL8Qxjca6IkoM4m-PknYoeuqv9R2ku6"/></div></div></header><main class="relative pt-16 w-full px-space-lg min-h-screen bg-background"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Operational Greeting & Live Yard Telemetry Banner -->
+<div class="mb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Good morning, Rajesh Patel</span>
+<span class="px-space-xs py-space-xxs bg-surface-container-high text-primary font-label-sm text-label-sm rounded uppercase">Licensed Adhatiya #APMC-PUN-084</span>
+<span class="px-space-xs py-space-xxs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded flex items-center gap-space-xxs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+            Pit Weighbridge #2 Online
+          </span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-space-xxs text-primary font-semibold">
+<span class="material-symbols-outlined text-space-base">storefront</span>
+            APMC Yard No. 4, Pune Market • Shed 14B
+          </span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-space-base">schedule</span>
+            Active Trading Window: <strong class="text-on-surface">06:00 - 12:30 IST</strong>
+</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant">Session Elapsed: <strong>03h 48m</strong></span>
+</div>
+</div>
+<!-- Compliance & Hardware Micro-Bar -->
+<div class="flex items-center gap-space-xs self-start lg:self-center bg-surface-container-low px-space-md py-space-xs rounded-lg">
+<div class="flex items-center gap-space-xs text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-space-md">verified</span>
+<span>APMC Statutory By-laws Enforced</span>
+</div>
+<span class="text-outline-variant">|</span>
+<div class="flex items-center gap-space-xxs text-on-surface font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>COM1 / Toledo Serial Active</span>
+</div>
+</div>
+</div>
+<!-- Rapid Action Command Strip -->
+<div class="grid grid-cols-2 md:grid-cols-5 gap-space-sm">
+<a class="flex items-center justify-between px-space-md py-space-sm bg-primary-container text-on-primary rounded-lg shadow-sm hover:bg-primary transition-all group" href="#">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-space-lg group-hover:scale-110 transition-transform">add_box</span>
+<span class="font-label-lg text-label-lg font-semibold truncate">+ Inward Lot</span>
+</div>
+<kbd class="hidden sm:inline-block px-space-xs py-space-xxs bg-primary text-on-primary font-label-sm text-label-sm rounded opacity-80">Shift+N</kbd>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-lowest text-on-surface rounded-lg shadow-sm hover:bg-surface-container-high transition-all group" href="#">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-space-lg text-secondary group-hover:rotate-12 transition-transform">gavel</span>
+<span class="font-label-lg text-label-lg font-semibold truncate">Auction Desk</span>
+</div>
+<kbd class="hidden sm:inline-block px-space-xs py-space-xxs bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm rounded">F1</kbd>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-lowest text-on-surface rounded-lg shadow-sm hover:bg-surface-container-high transition-all group" href="#">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-space-lg text-primary-container group-hover:scale-110 transition-transform">point_of_sale</span>
+<span class="font-label-lg text-label-lg font-semibold truncate">Record Pay-In</span>
+</div>
+<kbd class="hidden sm:inline-block px-space-xs py-space-xxs bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm rounded">F6</kbd>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-lowest text-on-surface rounded-lg shadow-sm hover:bg-surface-container-high transition-all group" href="#">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-space-lg text-tertiary-container group-hover:-translate-x-0.5 transition-transform">assignment_return</span>
+<span class="font-label-lg text-label-lg font-semibold truncate">Crate / Sack Return</span>
+</div>
+<kbd class="hidden sm:inline-block px-space-xs py-space-xxs bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm rounded">F7</kbd>
+</a>
+<a class="col-span-2 md:col-span-1 flex items-center justify-between px-space-md py-space-sm bg-surface-container-lowest text-on-surface rounded-lg shadow-sm hover:bg-surface-container-high transition-all group" href="#">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-space-lg text-on-surface-variant group-hover:text-primary transition-colors">summarize</span>
+<span class="font-label-lg text-label-lg font-semibold truncate">EOD Bahi-Khata</span>
+</div>
+<span class="material-symbols-outlined text-space-md text-on-surface-variant">download</span>
+</a>
+</div>
+</div>
+<!-- Operational KPI Metric Grid (6 High-Density Telemetry Blocks) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-md mb-space-lg">
+<!-- Card 1: Today's Inward Lots -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Inward Lots Today</span>
+<span class="material-symbols-outlined text-space-md text-secondary">inventory_2</span>
+</div>
+<div class="my-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">48</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">+12% vs yest.</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-primary-container h-full rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant pt-space-xs bg-surface-container-low/50 px-space-xs rounded">
+<span>36 Sold</span>
+<span>•</span>
+<span class="text-secondary font-semibold">8 Active</span>
+<span>•</span>
+<span>4 Weighing</span>
+</div>
+</div>
+<!-- Card 2: Gross Mandi Turnover -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Gross Turnover</span>
+<span class="material-symbols-outlined text-space-md text-primary">currency_rupee</span>
+</div>
+<div class="my-space-xs">
+<div class="flex items-baseline gap-space-xxs">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">₹8,42,850</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-space-xxs">Avg: ₹34.80 / kg aggregate</p>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-space-xs bg-surface-container-low/50 px-space-xs rounded">
+<span class="text-secondary">₹6.15L Cleared</span>
+<span class="text-tertiary">₹2.28L Live Pit</span>
+</div>
+</div>
+<!-- Card 3: Commission & Mandi Cess -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Commission &amp; Cess</span>
+<span class="material-symbols-outlined text-space-md text-tertiary">receipt_long</span>
+</div>
+<div class="my-space-xs">
+<div class="flex items-baseline gap-space-xxs">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">₹42,142</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary font-semibold mt-space-xxs">Agent Adhat @ 4.0%: ₹33,714</p>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant pt-space-xs bg-surface-container-low/50 px-space-xs rounded">
+<span>APMC Cess (1.0%):</span>
+<span class="font-semibold text-on-surface">₹8,428</span>
+</div>
+</div>
+<!-- Card 4: Daily Payment Collections -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Today's Collections</span>
+<span class="material-symbols-outlined text-space-md text-secondary">payments</span>
+</div>
+<div class="my-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary">61.5%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">₹5,18,200</span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-secondary h-full rounded-full" style="width: 61.5%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant pt-space-xs bg-surface-container-low/50 px-space-xs rounded">
+<span>Pending Due:</span>
+<span class="text-error font-semibold">₹3,24,650</span>
+</div>
+</div>
+<!-- Card 5: Outstanding Assets -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Returnable Packaging</span>
+<span class="material-symbols-outlined text-space-md text-error">local_shipping</span>
+</div>
+<div class="my-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">412</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Crates With Buyers</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-space-xxs">180 Jute Sacks In Circulation</p>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm pt-space-xs bg-error-container/40 px-space-xs rounded text-on-error-container">
+<span class="flex items-center gap-space-xxs"><span class="w-1.5 h-1.5 rounded-full bg-error"></span>32 Crates Overdue</span>
+<span class="font-semibold">&gt;5 Days</span>
+</div>
+</div>
+<!-- Card 6: Pit Velocity & Active Buyers -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pit Floor Pace</span>
+<span class="material-symbols-outlined text-space-md text-primary">speed</span>
+</div>
+<div class="my-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">3.8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">min / lot avg</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary font-semibold mt-space-xxs">Optimal Clearance Tempo</p>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant pt-space-xs bg-surface-container-low/50 px-space-xs rounded">
+<span>Active Licensed Buyers:</span>
+<span class="font-bold text-on-surface">12 in Pit</span>
+</div>
+</div>
+</div>
+<!-- Primary Split Architectural Work Area -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT & CENTER DENSE SECTION (8 Columns) -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg min-w-0">
+<!-- Module A: Mandi Auction Batches & Floor Status Data Grid -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Control Header -->
+<div class="p-space-base bg-surface-container-lowest flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Today's Auction Batches &amp; Inward Lots</span>
+<span class="px-space-xs py-space-xxs bg-primary-container text-on-primary font-label-sm text-label-sm rounded font-semibold">Shed 14B Lane</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Real-time Adhat pit ledger with automated weighment &amp; takpatti verification</span>
+</div>
+<!-- Quick Filters -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xxs sm:pb-0">
+<button class="px-space-sm py-space-xs bg-primary-container text-on-primary font-label-sm text-label-sm rounded-lg whitespace-nowrap shadow-sm">All Lots (48)</button>
+<button class="px-space-sm py-space-xs bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm rounded-lg whitespace-nowrap transition-colors flex items-center gap-space-xxs">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+              Live Pit (2)
+            </button>
+<button class="px-space-sm py-space-xs bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm rounded-lg whitespace-nowrap transition-colors">Queue (6)</button>
+<button class="px-space-sm py-space-xs bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm rounded-lg whitespace-nowrap transition-colors">Knocked (34)</button>
+<button class="px-space-sm py-space-xs bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm rounded-lg whitespace-nowrap transition-colors">Held (6)</button>
+</div>
+</div>
+<!-- High-Density Mandi Grid -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-xs px-space-md">Lot ID / Inward</th>
+<th class="py-space-xs px-space-sm">Farmer &amp; Origin</th>
+<th class="py-space-xs px-space-sm">Commodity / Grade</th>
+<th class="py-space-xs px-space-sm text-right">Net Wt. / Crates</th>
+<th class="py-space-xs px-space-sm text-right">Winning Bid</th>
+<th class="py-space-xs px-space-sm">Buyer Account</th>
+<th class="py-space-xs px-space-sm text-right">Gross Total</th>
+<th class="py-space-xs px-space-sm">Settlement &amp; Asset Status</th>
+<th class="py-space-xs px-space-md text-right">Action</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<!-- ROW 1: Tomatoes (Active Won) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-primary">LOT-0891</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">09:42 AM</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Rameshwar Khot</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Phaltan, Satara</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-xxs bg-error-container text-on-error-container font-label-sm text-label-sm rounded font-medium">Hybrid 1057</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Grade A</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<div class="flex flex-col items-end">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold">1,300 kg</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">52 Crates (Ret.)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-primary">₹22.50 / kg</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold truncate">ABC Agro Traders</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">#B-088 • Pune Market</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-on-surface">₹29,250.00</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-space-xxs">
+<span class="inline-flex items-center gap-space-xxs px-space-xs py-space-xxs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded font-semibold w-fit">
+<span class="w-1 h-1 rounded-full bg-secondary"></span>Slip Issued
+                    </span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">52 Crates Outward</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-high rounded transition-colors" title="Print APMC Takpatti Slip">
+<span class="material-symbols-outlined text-space-base">print</span>
+</button>
+<button class="p-space-xs bg-primary-container text-on-primary hover:bg-primary rounded transition-colors" title="View Line Ledger">
+<span class="material-symbols-outlined text-space-base">arrow_forward</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2: Nashik Red Onions (Live in Pit) -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xxs">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-primary">LOT-0895</span>
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">10:11 AM</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Baburao Sanap</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Yeola, Nashik</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-xxs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded font-medium">Nashik Red</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">50mm+</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<div class="flex flex-col items-end">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold">4,200 kg</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">84 Gunny Sacks</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<div class="flex flex-col items-end">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-error">₹18.50 / kg</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Active Bid</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-primary truncate">Kisan B2B Supply</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">#B-014 (Floor Leading)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-on-surface">₹77,700.00</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-space-xxs px-space-xs py-space-xxs bg-error-container text-on-error-container font-label-sm text-label-sm rounded font-semibold">
+<span class="material-symbols-outlined text-space-xs animate-spin">sync</span>Floor Auction Live
+                  </span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="px-space-sm py-space-xs bg-error text-on-error hover:bg-error/90 font-label-sm text-label-sm rounded font-semibold transition-colors shadow-sm">
+                    Knock Down
+                  </button>
+</td>
+</tr>
+<!-- ROW 3: Local Coriander Bundles (Direct Sacks - No Returnable) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-primary">LOT-0889</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">08:50 AM</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Vithal D. Gaikwad</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Khed Shivapur, Pune</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-xxs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded font-medium">Desi Coriander</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">A1 Fresh</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<div class="flex flex-col items-end">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold">1,800 Bundles</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct Lot / No Crate</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-primary">₹8.20 / bdl</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold truncate">Mauli Veg Wholesalers</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">#B-112</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-on-surface">₹14,760.00</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-space-xxs px-space-xs py-space-xxs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded font-semibold">
+<span class="material-symbols-outlined text-space-xs text-secondary">check</span>Paid (IMPS)
+                  </span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-high rounded transition-colors">
+<span class="material-symbols-outlined text-space-base">receipt</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 4: Green Chillies (G-4) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-primary">LOT-0887</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">08:15 AM</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Suresh M. Jadhav</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Baramati, Pune</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-xxs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded font-medium">G-4 Spicy Chilli</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Export Export</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<div class="flex flex-col items-end">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold">850 kg</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">34 Crates (Ret.)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-primary">₹54.00 / kg</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold truncate">Sahyadri Fresh Produce</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">#B-042</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-on-surface">₹45,900.00</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-space-xxs">
+<span class="inline-flex items-center gap-space-xxs px-space-xs py-space-xxs bg-error-container text-on-error-container font-label-sm text-label-sm rounded font-semibold w-fit">
+                      Credit Outstanding
+                    </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">34 Crates Signed Out</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-high rounded transition-colors">
+<span class="material-symbols-outlined text-space-base">print</span>
+</button>
+<button class="p-space-xs bg-primary-container text-on-primary hover:bg-primary rounded transition-colors">
+<span class="material-symbols-outlined text-space-base">arrow_forward</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 5: Nagpur Oranges -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-primary">LOT-0883</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">07:40 AM</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Pravin Deshmukh</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Warud, Amravati</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-xxs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded font-medium">Nagpur Mandarin</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Grade 1</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<div class="flex flex-col items-end">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold">2,600 kg</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">104 Crates (Ret.)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-primary">₹41.00 / kg</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold truncate">Mumbai Golden Fruits</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">#B-199</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-bold text-on-surface">₹1,06,600.00</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-space-xxs">
+<span class="inline-flex items-center gap-space-xxs px-space-xs py-space-xxs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded font-semibold w-fit">
+<span class="w-1 h-1 rounded-full bg-secondary"></span>Paid (RTGS)
+                    </span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Gate Pass Verified</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-high rounded transition-colors">
+<span class="material-symbols-outlined text-space-base">print</span>
+</button>
+<button class="p-space-xs bg-primary-container text-on-primary hover:bg-primary rounded transition-colors">
+<span class="material-symbols-outlined text-space-base">arrow_forward</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Summary Ledger Footer -->
+<div class="p-space-base bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-semibold text-primary">Page 1 of 5 (Showing 5 of 48 Lots)</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant">Total Quantity Handled: <strong>10,750 kg</strong></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-space-xs bg-surface-container-lowest text-on-surface rounded font-label-sm text-label-sm shadow-sm hover:bg-surface-container-high transition-colors">Previous</button>
+<button class="px-space-sm py-space-xs bg-primary-container text-on-primary rounded font-label-sm text-label-sm font-semibold shadow-sm hover:bg-primary transition-colors">Next Pit Batch →</button>
+</div>
+</div>
+</div>
+<!-- Module B: Receivables & Settlement Collection Ledger -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-base">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-xs">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Receivables &amp; Settlement Collection Ledger</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Daily intraday settlement pacing against APMC credit limit guarantees</p>
+</div>
+<span class="px-space-xs py-space-xxs bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm rounded">Cut-off: 02:00 PM IST</span>
+</div>
+<!-- Progress Visualization Strip -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary font-semibold">Collected: ₹5,18,200.00 (61.5%)</span>
+<span class="text-error font-semibold">Due &amp; Pending: ₹3,24,650.00 (38.5%)</span>
+</div>
+<div class="w-full bg-error-container h-3 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 61.5%"></div>
+<div class="bg-primary-container h-full" style="width: 14%"></div>
+<div class="bg-transparent h-full flex-1"></div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-space-xxs"><span class="w-2 h-2 rounded-full bg-secondary"></span>Direct RTGS/IMPS (₹5.18L)</span>
+<span class="flex items-center gap-space-xxs"><span class="w-2 h-2 rounded-full bg-primary-container"></span>Under Clearing (₹1.18L)</span>
+<span class="flex items-center gap-space-xxs"><span class="w-2 h-2 rounded-full bg-error"></span>Unsettled Credit (₹2.06L)</span>
+</div>
+</div>
+<!-- Pending Settlement Table -->
+<div class="overflow-x-auto w-full mt-space-xs">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-xs px-space-sm">Buyer Identity</th>
+<th class="py-space-xs px-space-sm">Bank / Method</th>
+<th class="py-space-xs px-space-sm text-right">Balance Due</th>
+<th class="py-space-xs px-space-sm">APMC Credit Status</th>
+<th class="py-space-xs px-space-sm text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Sahyadri Fresh Produce</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">APMC Buyer #B-042 • Mandi Deposit ₹5.00L</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm font-label-sm text-label-sm text-on-surface-variant">HDFC Virtual Escrow</td>
+<td class="py-space-sm px-space-sm text-right font-numeric-tabular-md text-numeric-tabular-md font-bold text-error">
+                  ₹1,12,400.00
+                </td>
+<td class="py-space-sm px-space-sm">
+<span class="px-space-xs py-space-xxs bg-error-container text-on-error-container font-label-sm text-label-sm rounded font-semibold">Due Today 02:00 PM</span>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<button class="px-space-sm py-space-xs bg-primary-container text-on-primary hover:bg-primary font-label-sm text-label-sm rounded font-semibold transition-colors shadow-sm">
+                    Record Pay-In
+                  </button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Mauli Veg Wholesalers</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">APMC Buyer #B-112 • Mandi Deposit ₹2.50L</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm font-label-sm text-label-sm text-on-surface-variant">ICICI Current A/c</td>
+<td class="py-space-sm px-space-sm text-right font-numeric-tabular-md text-numeric-tabular-md font-bold text-on-surface">
+                  ₹64,200.00
+                </td>
+<td class="py-space-sm px-space-sm">
+<span class="px-space-xs py-space-xxs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded font-semibold">Credit Guaranteed</span>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<button class="px-space-sm py-space-xs bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-sm text-label-sm rounded font-semibold transition-colors">
+                    Send Link
+                  </button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Kisan B2B Supply Line</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">APMC Buyer #B-014 • Mandi Deposit ₹10.00L</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm font-label-sm text-label-sm text-on-surface-variant">SBI Mandi Clearing</td>
+<td class="py-space-sm px-space-sm text-right font-numeric-tabular-md text-numeric-tabular-md font-bold text-on-surface">
+                  ₹1,48,050.00
+                </td>
+<td class="py-space-sm px-space-sm">
+<span class="px-space-xs py-space-xxs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded font-semibold">Partial Paid (₹50k In)</span>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<button class="px-space-sm py-space-xs bg-primary-container text-on-primary hover:bg-primary font-label-sm text-label-sm rounded font-semibold transition-colors shadow-sm">
+                    Record Pay-In
+                  </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- RIGHT AUDIT & ASSET RAIL (4 Columns) -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg min-w-0">
+<!-- Module C: Advisory AI Insights & Floor Alerts -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-space-lg text-secondary">auto_awesome</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Advisory AI Insights</span>
+</div>
+<span class="px-space-xs py-space-xxs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded uppercase font-semibold">Non-Automated</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time statutory compliance, quality anomalies, and APMC price variance alerts</p>
+<!-- Alert Cards Stack -->
+<div class="flex flex-col gap-space-sm">
+<!-- Advisory Alert 1: Price Divergence -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-xxs text-primary font-label-sm text-label-sm font-bold uppercase">
+<span class="material-symbols-outlined text-space-md text-primary">trending_up</span>
+                Price Divergence Advisory
+              </span>
+<span class="px-space-xs py-space-xxs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded font-semibold">+14.2%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+              Onion (Nashik Red) floor rate is clearing at <strong class="text-primary font-semibold">₹18.50/kg</strong>, which is +14% above Lasalgaon benchmark (<strong class="text-on-surface font-semibold">₹16.20/kg</strong>) due to delayed highway arrivals.
+            </p>
+<div class="flex items-center justify-between pt-space-xxs text-on-surface-variant font-label-sm text-label-sm">
+<span>Source: Agmarknet API</span>
+<a class="text-primary font-semibold hover:underline" href="#">Apply Floor Guardrail →</a>
+</div>
+</div>
+<!-- Advisory Alert 2: Asset Retention Risk -->
+<div class="p-space-sm bg-error-container/30 rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-xxs text-error font-label-sm text-label-sm font-bold uppercase">
+<span class="material-symbols-outlined text-space-md text-error">warning</span>
+                Asset Retention Risk
+              </span>
+<span class="px-space-xs py-space-xxs bg-error text-on-error font-label-sm text-label-sm rounded font-bold">7 Days Aging</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong>Sahyadri Fresh Produce (#B-042)</strong> holds <strong class="text-error font-semibold">68 Crates</strong> outstanding for 7 days (APMC by-law limit: 48h). Suggested statutory deposit hold: <strong class="text-on-surface font-semibold">₹8,160.00</strong>.
+            </p>
+<div class="flex items-center justify-between pt-space-xxs text-on-surface font-label-sm text-label-sm">
+<span class="text-error font-semibold">Deposit Hold Active</span>
+<button class="px-space-xs py-space-xxs bg-surface-container-lowest text-on-surface rounded font-semibold hover:bg-surface-container-high transition-colors">Issue Summons</button>
+</div>
+</div>
+<!-- Advisory Alert 3: Quality Grade Variance -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-xxs text-tertiary font-label-sm text-label-sm font-bold uppercase">
+<span class="material-symbols-outlined text-space-md text-tertiary">science</span>
+                Quality Variance
+              </span>
+<span class="px-space-xs py-space-xxs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded">Lot-0894</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+              Lot-0894 Cauliflower: Moisture content assessed at <strong>88.4%</strong> by pit grader (Threshold: 82%). Recommended downward base reserve adjustment of ₹1.20/kg.
+            </p>
+</div>
+</div>
+</div>
+<!-- Module D: Packaging & Returnable Asset Daily Balance -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-space-lg text-primary">swap_horiz</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">APMC Depot Packaging Tracker</span>
+</div>
+<button class="p-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-high rounded transition-colors" title="Trigger Yard Depot Re-Audit">
+<span class="material-symbols-outlined text-space-md">refresh</span>
+</button>
+</div>
+<!-- Crate Asset Visual Breakdown -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="font-semibold text-on-surface">Plastic Nesting Crates (20 kg cap.)</span>
+<span class="font-bold text-primary">485 in Shed Reserve</span>
+</div>
+<!-- Mini Inline Bar Metric -->
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 55%" title="Returned Today"></div>
+<div class="bg-tertiary-container h-full" style="width: 30%" title="Issued Today"></div>
+<div class="bg-error h-full" style="width: 15%" title="Overdue Outside"></div>
+</div>
+<div class="grid grid-cols-3 gap-space-xs text-center font-body-sm text-body-sm pt-space-xs">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">260</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Issued Today</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">195</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Returned Back</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-error">412</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">Total with Buyers</span>
+</div>
+</div>
+</div>
+<!-- Gunny Sacks Balance -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-space-lg text-on-surface-variant">shopping_bag</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Standard Gunny Sacks (50 kg)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Issued 180 • Returned 180</span>
+</div>
+</div>
+<span class="px-space-xs py-space-xxs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded font-semibold">
+            Zero Variance
+          </span>
+</div>
+<button class="w-full py-space-xs bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded font-semibold transition-colors flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-space-sm">inventory</span>
+<span>Dispatch Yard Re-audit Count</span>
+</button>
+</div>
+<!-- Module E: Financial Audit Log & APMC Takpatti Slips Feed -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-space-lg text-primary">history_edu</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Mandi Audit Stream</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Live Feed</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="flex items-start gap-space-sm pb-space-xs">
+<div class="w-2 h-2 rounded-full bg-secondary mt-1.5 shrink-0"></div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Lot #0891 Confirmed</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">10:14 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Knocked to ABC Agro Traders for <strong>₹29,250.00</strong> (Slip #PUN-842)</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start gap-space-sm pb-space-xs">
+<div class="w-2 h-2 rounded-full bg-primary mt-1.5 shrink-0"></div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">NEFT Remittance Received</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">10:02 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant"><strong>₹85,000.00</strong> from Shree Ganesh Mandi Wholesalers (UTR: UTR-99214)</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-start gap-space-sm">
+<div class="w-2 h-2 rounded-full bg-tertiary-container mt-1.5 shrink-0"></div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Crates Returned to Yard</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">09:35 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant"><strong>40 Empty Crates</strong> verified from Venkateshwara Retail (Inspected: Shed Bay 3)</p>
+</div>
+</div>
+</div>
+<a class="text-center font-label-sm text-label-sm text-primary font-semibold hover:underline pt-space-xs" href="#">
+          View Complete APMC Day Audit Log →
+        </a>
+</div>
+</div>
+</div>
+<!-- Sticky Farmer Payout Reconciliation Dock (Level 4 Operational Module) -->
+<div class="mt-space-lg sticky bottom-space-base z-30 bg-surface-container-lowest/95 backdrop-blur-md p-space-md rounded-xl shadow-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md w-full md:w-auto">
+<div class="p-space-sm bg-primary-container text-on-primary rounded-lg shrink-0 hidden sm:flex">
+<span class="material-symbols-outlined text-space-xl">account_balance</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Farmer DBT Settlement Queue</span>
+<span class="px-space-xs py-space-xxs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded font-bold">18 Ready</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Direct Bank Transfer queue validated with APMC cess and Tol/weighment deduction</p>
+</div>
+</div>
+<!-- Live Financial Formula Pills -->
+<div class="flex flex-wrap items-center justify-between md:justify-end gap-space-md w-full md:w-auto">
+<div class="flex items-center gap-space-md text-on-surface font-body-sm text-body-sm">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Net Disbursable</span>
+<span class="font-numeric-currency-lg text-numeric-currency-lg font-bold text-primary">₹5,41,890.00</span>
+</div>
+<div class="hidden lg:flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Total Tol / Cess</span>
+<span class="font-numeric-tabular-md text-numeric-tabular-md font-semibold text-on-surface">₹14,210.00</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-space-sm bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg font-semibold rounded-lg transition-colors">
+          Audit Slips (18)
+        </button>
+<button class="px-space-lg py-space-sm bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg font-semibold rounded-lg shadow-sm transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-space-base">send</span>
+<span>Disburse Instant DBT</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
